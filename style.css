@@ -1,0 +1,146 @@
+:root{
+    /* Colors */
+    --color-white:hsl(0, 0%, 100%);
+    --color-black:hsl(0, 0%, 0%);
+    --color-dark-gray:hsl(0, 0%, 55%);
+    --color-very-dark-gray:hsl(0, 0%, 41%);
+
+}
+
+.menu-list{
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.img{
+    box-sizing: border-box;
+    object-fit: cover;
+}
+
+.img.top{
+    display: block;
+    width: 100%;        
+}
+.image-interactive{
+    width: 100%;
+}
+.container{
+    width: calc(100vw - (100vw - 100%));
+    background-color: var(--color-white);
+    min-height: 100vh;
+}
+
+/* 
+Alata
+font-family: 'Alata', sans-serif;
+
+Josefin Sans
+font-family: 'Josefin Sans', sans-serif;
+300
+ */
+.content{
+    display: flex;
+    
+    flex-direction: column;
+}
+.logo{
+    width: 7rem;
+    height: 1.3rem;
+}
+.img-hamburger{
+    height: .8rem;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.nav{
+    position: absolute;
+    display: flex;
+    margin-top: .5rem;    
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 44rem;
+    height: 4rem;
+    width: 85%;
+    margin: auto;
+    top: 0;
+}
+.title-top{
+    position: absolute;
+    text-align: start;    
+    top: 45%;
+    font-weight: 400;
+    padding: 1rem;
+    color: white;    
+    margin: .1rem 1.4rem;        
+    border: 1px solid white;
+    font-family: 'Alata', sans-serif;
+}
+.body{
+    margin: 3rem auto;
+    width: 85%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.h2-top-content{
+    text-align: center;
+    color: var(--color-very-dark-gray);  
+    font-weight: 300;
+}
+.body-top-content{
+    display: flex;
+    flex-direction: column;         
+    gap: .7rem;  
+    color: var(--color-dark-gray);
+    text-align: center;
+    margin: 2rem .32rem;
+}
+.img-grid{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80px;
+}
+.img-grid:nth-of-type(1){     
+    background-image: url(loopstudios-landing-page-main/images/mobile/image-deep-earth.jpg);  
+}
+.img-grid:nth-of-type(2){
+    background-image: url(loopstudios-landing-page-main/images/mobile/image-night-arcade.jpg);
+}
+.img-grid:nth-of-type(3){
+    background-image: url(loopstudios-landing-page-main/images/mobile/image-soccer-team.jpg);
+}
+.img-grid:nth-of-type(4){
+    background-image: url(loopstudios-landing-page-main/images/mobile/image-grid.jpg);
+}
+.img-grid:nth-of-type(5){
+    background-image: url(loopstudios-landing-page-main/images/mobile/image-from-above.jpg);
+}
+.img-grid:nth-of-type(6){
+    background-image: url(loopstudios-landing-page-main/images/mobile/image-pocket-borealis.jpg);
+}
+.img-grid:nth-of-type(7){
+    background-image: url(loopstudios-landing-page-main/images/mobile/image-curiosity.jpg);
+}
+.img-grid:nth-of-type(8){
+    background-image: url(loopstudios-landing-page-main/images/mobile/image-fisheye.jpg);
+}
+.img-grid::after{
+    position: relative;
+   display: inline-block;
+    top: 2.5rem;
+    left: .5rem; 
+    content: attr(attr-title); 
+    color: var(--color-white);
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+         column-count: 3;
+}
+.body-bottom-content{
+    display: grid;
+    gap: .8rem;
+}
