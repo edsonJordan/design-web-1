@@ -9,6 +9,13 @@
 
 .menu-list{
     display: none;
+
+}
+.ul-menu{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 *{
@@ -100,10 +107,10 @@ font-family: 'Josefin Sans', sans-serif;
     margin: 2rem .32rem;
 }
 .img-grid{
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 80px;
+    height: 85px;
 }
 .img-grid:nth-of-type(1){     
     background-image: url(loopstudios-landing-page-main/images/mobile/image-deep-earth.jpg);  
@@ -134,13 +141,44 @@ font-family: 'Josefin Sans', sans-serif;
    display: inline-block;
     top: 2.5rem;
     left: .5rem; 
+    width: 35%;
     content: attr(attr-title); 
     color: var(--color-white);
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-         column-count: 3;
+    -webkit-column-count: -3;
+    -moz-column-count: -3;
+         column-count: -3;
 }
 .body-bottom-content{
     display: grid;
     gap: .8rem;
+}
+.button{
+    box-sizing: border-box;
+}
+.button-link{
+    margin: auto;
+    width: 50%;
+    border: 1px solid var(--color-black);
+    color: var(--color-black);
+    padding: .3rem;
+    background-color: var(--color-white);
+}
+.footer{
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    justify-items: center;
+    background-color: var(--color-black);
+    gap: 2rem;
+}
+.footer>.logo-img{
+    display: flex;
+    margin: auto;
+}
+.footer>.menu-list{
+    display: flex;
+    margin: auto;
+    text-align: center;
+    color: var(--color-white);
+    font-family: 'Josefin Sans', sans-serif;
 }
