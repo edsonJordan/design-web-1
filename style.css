@@ -4,18 +4,18 @@
     --color-black:hsl(0, 0%, 0%);
     --color-dark-gray:hsl(0, 0%, 55%);
     --color-very-dark-gray:hsl(0, 0%, 41%);
-
 }
-
-.menu-list{
+.none{
     display: none;
-
 }
-.ul-menu{
+.ul-menu{    
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+.menu-list.nav{
+
 }
 
 *{
@@ -54,11 +54,21 @@ font-family: 'Josefin Sans', sans-serif;
     flex-direction: column;
 }
 .logo{
+    position: absolute;
+    z-index: 99;
     width: 7rem;
     height: 1.3rem;
 }
 .img-hamburger{
     height: .8rem;
+    position: absolute;
+    z-index: 99;
+}
+
+
+.link-nav{
+    text-decoration: none;
+    color: var(--color-white);
 }
 .header{
     display: flex;
@@ -174,6 +184,7 @@ font-family: 'Josefin Sans', sans-serif;
 .footer>.logo-img{
     display: flex;
     margin: auto;
+    z-index: 10;
 }
 .footer>.menu-list{
     display: flex;
@@ -181,4 +192,20 @@ font-family: 'Josefin Sans', sans-serif;
     text-align: center;
     color: var(--color-white);
     font-family: 'Josefin Sans', sans-serif;
+}
+.icons-social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.rights{
+    
+    text-align: center;
+}
+.span-rights{
+    font-size: .7rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--color-very-dark-gray);
 }
